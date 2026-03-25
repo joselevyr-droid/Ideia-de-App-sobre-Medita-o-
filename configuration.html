@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Configurações</title>
+<link rel="stylesheet" href="config.css">
+</head>
+<body class="config-page">
+  <button id="btnVoltar" class="btn-voltar">‹</button>
+  <h1 class="config-title">Configurações</h1>
+  <div class="config-options">
+    <div class="config-option tema-container">
+  <span>Tema:</span>
+  <button id="setaEsq" class="seta-tema">&lt;</button>
+  <div id="temaSelector" class="tema-circulo"></div>
+  <button id="setaDir" class="seta-tema">&gt;</button>
+</div>
+    <div class="config-option tema-container">
+  <span>Música:</span>
+  <button id="setaMusicaEsq" class="seta-tema">&lt;</button>
+  <div id="musicaSelector" class="musica-display"></div>
+  <button id="setaMusicaDir" class="seta-tema">&gt;</button>
+</div>
+  <div class="config-option tema-container">
+  <span>Volume:</span>
+  <input type="range" id="volumeControl" min="0" max="1" step="0.01">
+</div>
+  </div>
+   <audio id="musicaGlobal" loop></audio>
+  <script src="config01.js"></script>
+</body>
+</html>

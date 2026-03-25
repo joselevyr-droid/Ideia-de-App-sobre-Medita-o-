@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pagamento</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="paga.css">
+</head>
+<body>
+<button class="btn-voltar" onclick="history.back()">‹</button>
+<div class="pagamento-box">
+  <h2>Pagamento</h2>
+  <p>Escolha como você quer pagar</p>
+  <button class="btn-pagamento btn-pix" id="btnPix">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+      <path d="M12 2l4 4-4 4-4-4 4-4zm0 12l4 4-4 4-4-4 4-4zm10-4l-4 4-4-4 4-4 4 4zM6 10l4 4-4 4-4-4 4-4z"/>
+    </svg>
+    Pix
+  </button>
+  <button class="btn-pagamento btn-cartao" id="btnCartao">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+      <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+      <rect x="2" y="8" width="20" height="3"></rect>
+    </svg>
+    Cartão
+  </button>
+</div>
+  <div id="popupPagamento" class="popup-pagamento">
+  <div class="popup-conteudo">
+    <div class="loader"></div>
+    <p>Processando pagamento...</p>
+  </div>
+</div>
+<script src="paga01.js"></script>
+<audio id="musicaGlobal" loop></audio>
+<script src="paga02.js"></script>
+</body>
+</html>

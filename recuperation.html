@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Recuperação</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="recupera.css">
+</head>
+<body>
+<button class="btn-voltar" onclick="history.back()">‹</button>
+<div class="suporte-box">
+  <h2>Recuperar conta</h2>
+  <p>Digite seu email para receber o código</p>
+  <input type="email" id="email" class="input" placeholder="Seu email">
+  <button class="btn-enviar" id="enviarCodigo">Enviar código</button>
+  <input type="text" id="codigo" class="input" placeholder="Digite o código">
+  <button class="btn-enviar" id="validarCodigo">Confirmar</button>
+</div>
+<div class="aviso">
+  ⚠️ Isso é apenas um site de treino. Nenhum email será enviado.
+</div>
+<script src="recupera01.js"></script>
+<audio id="musicaGlobal" loop></audio>
+<script src="recupera02.js"></script>
+</body>
+</html>
