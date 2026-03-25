@@ -1,0 +1,150 @@
+  html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.perfil-popup { 
+  background: #fff; 
+  padding: 20px; 
+  border-radius: 20px; 
+  max-width: 500px; 
+  margin: 50px auto; 
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.perfil-popup img { 
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+}
+.logout-btn { 
+  padding: 12px 25px; 
+  border: none; 
+  border-radius: 12px; 
+  color: #fff; 
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.logout-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.tema-0 .logout-btn { background: #4e7a68; }
+.tema-1 .logout-btn { background: #b85c5c; }
+.tema-2 .logout-btn { background: #5c7eb8; }
+.tema-3 .logout-btn { background: #7a5ca0; }
+.tema-4 .logout-btn { background: #d68b5c; }
+.tema-5 .logout-btn { background: #333333; }
+.tema-0 .logout-btn:hover { background: #3e6354; }
+.tema-1 .logout-btn:hover { background: #9f4d4d; }
+.tema-2 .logout-btn:hover { background: #4d6aa0; }
+.tema-3 .logout-btn:hover { background: #684a8a; }
+.tema-4 .logout-btn:hover { background: #b8744d; }
+.tema-5 .logout-btn:hover { background: #222222; }
+.btn-voltar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10002;
+  background: var(--cor-barra);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.topo-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.info-usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nome-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#editarNome {
+  cursor: pointer;
+}
+#editarNome:hover {
+  opacity: 0.7;
+}
+#emailUsuario {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.popup-nome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.popup-box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+.popup-box input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  width: 200px;
+}
+.popup-box button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4e7a68;
+  color: white;
+  cursor: pointer;
+}
+  .foto-container {
+  position: relative;
+}
+.btn-foto {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.tema-0 .btn-foto { background: #4e7a68; }
+.tema-1 .btn-foto { background: #b85c5c; }
+.tema-2 .btn-foto { background: #5c7eb8; }
+.tema-3 .btn-foto { background: #7a5ca0; }
+.tema-4 .btn-foto { background: #d68b5c; }
+.tema-5 .btn-foto { background: #333333; }

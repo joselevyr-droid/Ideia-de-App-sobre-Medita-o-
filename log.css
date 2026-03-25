@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body.login-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-popup {
+  position: fixed;
+  top: 20px;          
+  bottom: 20px;       
+  left: 20px;         
+  right: 20px;        
+  padding: 5px;       
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  box-sizing: border-box;
+}
+.login-popup-inner {
+  background: #ffffff;       
+  border-radius: 20px;       
+  width: 90%;                
+  max-width: 600px;          
+  padding: 30px 20px;        
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;                 
+  box-sizing: border-box;
+}
+.login-popup-inner input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.login-popup button {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4e7a68, #7fbfa3); 
+  transition: 0.3s;
+}
+.login-popup button:hover {
+  filter: brightness(1.1);
+}
+  .mensagem {
+    color: red;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .login-popup-inner a {
+  color: #4e7a68;
+  text-decoration: none;
+}
+.login-popup-inner a:first-of-type {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.login-popup-inner a:last-of-type {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.btn-voltar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10002;
+  background: var(--cor-barra);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+body.tema-verde { background: linear-gradient(to bottom, #4e7a68, #7fbfa3); }
+body.tema-vermelho { background: linear-gradient(to bottom, #b85c5c, #e09a9a); }
+body.tema-azul { background: linear-gradient(to bottom, #5c7eb8, #9ab9e0); }
+body.tema-roxo { background: linear-gradient(to bottom, #7a5ca0, #b49ad6); }
+body.tema-laranja { background: linear-gradient(to bottom, #d68b5c, #f2b89a); }
+body.tema-preto { background: linear-gradient(to bottom, #333333, #666666); }
+  
